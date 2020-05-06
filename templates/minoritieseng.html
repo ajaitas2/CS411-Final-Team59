@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Minorities</title>
+        <h2>Major vs. Minorities</h2>
+        <style>
+            h2 {
+                text-align: center;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size: 15mm;
+            }
+        </style>
+    </head>
+
+    <body>
+        <style>
+            .wrapper{
+                position: relative;
+                left: 50%;
+                top: 50%;
+                margin-top: -400px;
+                margin-left: -750px;
+            }
+            .datatable{
+                background-color: lightblue;
+            }
+            #datatable {
+              font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+              width: 60%;
+            }
+
+            #datatable td, #datatable th {
+              color: black;
+              font-size: 35px;
+              text-align: center;
+              border: 3px solid transparent;
+              padding: 8px;
+            }
+
+            #datatable tr {
+                background-color: lightblue;
+            }
+       
+        </style>
+
+        <div class = "wrapper">
+        <table id = "datatable">
+            <tr>
+                <th>Major %</th>
+                <th>Minority %</th>
+            </tr>
+            {% for row in sql_data %}
+            <tr>
+                <td>{{row.Major_Name}}</td>
+                <td>{{row.minorities}}</td>
+            </tr>
+            {% endfor %}
+        </table> 
+        </div>
+    </body>
+</html>

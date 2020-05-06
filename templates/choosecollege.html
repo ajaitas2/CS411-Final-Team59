@@ -1,0 +1,148 @@
+<html>
+    <body>
+        <style>
+            h2{
+                text-align: center;
+                font-size: 15mm;
+            }
+            input[type = text]{
+                width: 100px;
+                background-color: whitesmoke;
+                padding: 10px 10px;
+                border-radius: 5px;
+                box-sizing: border-box;
+                display: block;
+                align-items: center;
+                width: 50%;
+            }
+            label{
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size:7mm;
+                display: flex;
+            }
+            input[type=submit] {
+                width: 100px;
+                height: 30px;
+                background-color: powderblue;
+                color: black;
+                border-radius: 5px; 
+                cursor: pointer;
+                justify-content: center;
+                display: flex;
+            }
+            form{
+                width: 100%;
+                justify-content: center;
+                display:block;
+                align-items: center;
+                padding-left: 475px;
+                padding-top: 20px;
+            }
+            .link{
+                text-align: center;
+                justify-content: center;
+                font-size: 10mm;
+            }
+    
+        </style>
+    
+    <h2>Create a Major</h2>
+
+    <form action="http://localhost:5000/createmajor" method="POST">
+        <label for="major">major</label>
+        <input type="text" name="major" id="major">
+        <label for="degree">degree</label>
+        <input type="text" name="degree" id="degree">
+        <label for="college">college</label>
+        <input type="text" name="college" id="college">
+        <label for="department">department</label>
+        <input type="text" name="department" id="department">
+        <label for="total">total</label>
+        <input type="text" name="total" id="total">
+        <label for="men">men</label>
+        <input type="text" name="men" id="men">
+        <label for="women">women</label>
+        <input type="text" name="women" id="women">
+        <label for="caucasian">caucasian</label>
+        <input type="text" name="caucasian" id="caucasian">
+        <label for="asian american">asian american</label>
+        <input type="text" name="asianamerican" id="asian american">
+        <label for="african american">african american</label>
+        <input type="text" name="africanamerican" id="african american">
+        <label for="hispanic">hispanic</label>
+        <input type="text" name="hispanic" id="hispanic">
+        <label for="native american">native american</label>
+        <input type="text" name="nativeamerican" id="native american">
+        <label for="hawaiian pacific islander">hawaiian pacific islander</label>
+        <input type="text" name="hawaiianpacificislander" id="hawaiian pacific islander">
+        <label for="multiracial">multiracial</label>
+        <input type="text" name="multiracial" id="multiracial">
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <h2>Search for a Major</h2>
+    <form action="http://localhost:5000/searchcollege" method="POST">
+            <label for="Major:">Search by major</label>
+            <input type="text" name="major" id="major">
+            <label for="Degree:">and degree</label>
+            <input type="text" name="degree" id="degree">
+            <input type="submit" name="submit" value="submit">
+    </form>
+
+    <h2>Update a Major</h2>
+
+    <form action="http://localhost:5000/updatecollege" method="POST">
+    	<label for="major">major</label>
+    	<input type="text" name="major" id="major">
+    	<label for="degree">degree</label>
+        <input type="text" name="degree" id="degree">
+        <label for="college">college</label>
+        <input type="text" name="college" id="college">
+        <label for="department">department</label>
+        <input type="text" name="department" id="department">
+        <label for="total">total</label>
+        <input type="text" name="total" id="total">
+        <label for="men">men</label>
+        <input type="text" name="men" id="men">
+        <label for="women">women</label>
+        <input type="text" name="women" id="women">
+        <label for="caucasian">caucasian</label>
+    	<input type="text" name="caucasian" id="caucasian">
+        <label for="asianamerican">asian american</label>
+    	<input type="text" name="asianamerican" id="asianamerican">
+        <label for="african american">african american</label>
+    	<input type="text" name="africanamerican" id="africanamerican">
+        <label for="hispanic">hispanic</label>
+    	<input type="text" name="hispanic" id="hispanic">
+        <label for="native american">native american</label>
+    	<input type="text" name="nativeamerican" id="nativeamerican">
+        <label for="hawaiian pacific islander">hawaiian pacific islander</label>
+    	<input type="text" name="hawaiianpacificislander" id="hawaiianpacificislander">
+        <label for="multiracial">multiracial</label>
+    	<input type="text" name="multiracial" id="multiracial">
+    	<input type="submit" name="submit" value="Submit">
+    </form>
+
+    <h2>Delete a Major</h2>
+
+    <form action="http://localhost:5000/deletecollege" method="POST">
+    	<label for="major">Delete by major</label>
+        <input type="text" name="major" id="major">
+        <label for="degree">and degree</label>
+    	<input type="text" name="degree" id="degree">
+    	<input type="submit" name="submit" value="submit">
+    </form>
+
+    <h2>Choose a College</h2>
+
+    <form action="http://localhost:5000/choosecollege" method="POST"> 
+        <label for="college">Name of College</label>
+    	<input type="text" name="Collegename">
+        <input type="submit" name="submit">
+    </form>
+</body>
+
+<div class = "link">
+    <a  href="http://localhost:5000/minorityengineering">Learn about Minority Rates in Engineering</a>
+</div>
+</html>

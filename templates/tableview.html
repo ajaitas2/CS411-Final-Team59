@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>
+            Retention Rates
+        </title>
+        <h2>
+            Retention Rates
+        </h2>
+
+        <style>
+            h2 {
+                text-align: center;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size: 15mm;
+            }
+        </style>
+    </head>
+
+    <body>
+        <style>
+            #datatable {
+              font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+              width: 60%;
+            }
+
+            #datatable td, #datatable th {
+              border: 3px solid transparent;
+              padding: 8px;
+            }
+
+            #datatable tr {
+                background-color: lightblue;
+            }
+            
+            .wrapper{
+                position: relative;
+                top: 50%;
+                margin-left: -700px;
+                margin-top: -350px;
+                left: 50%;
+            }
+
+        </style>
+        <div class = "wrapper">
+        <table id = "datatable">
+            <tr>
+                <td>Race/Gender</td>
+                <td>College Retention Rate</td>
+                <td>Overall Retention Rate</td>
+                <td>Graduation Rate (6 year)</td>
+            </tr>
+            <tr>
+                <td>Asian</td>
+                <td>{{sql_data.Asian_same}}</td>
+                <td>{{sql_data.Asian_any}}</td>
+                <td>{{mongo_data.Asian}}</td>
+            <tr>
+                <td>Black / African American</td>
+                <td>{{sql_data.Black_same}}</td>
+                <td>{{sql_data.Black_any}}</td>
+                <td>{{mongo_data.Black_AfricanAmerican}}</td>
+            <tr>
+                <td>Hispanic</td>
+                <td>{{sql_data.Hispanic_same}}</td>
+                <td>{{sql_data.Hispanic_any}}</td>
+                <td>{{mongo_data.Hispanic}}</td>
+            </tr>
+            <tr>
+                <td>NHPI</td>
+                <td>{{sql_data.NHPI_same}}</td>
+                <td>{{sql_data.NHPI_any}}</td>
+                <td>{{mongo_data.NHPI}}</td>
+            </tr>
+            <tr>
+                <td>White</td>
+                <td>{{sql_data.White_same}}</td>
+                <td>{{sql_data.White_any}}</td>
+                <td>{{mongo_data.White}}</td>
+            </tr>
+            <tr>
+                <td>Multirace</td>
+                <td>{{sql_data.Multirace_same}}</td>
+                <td>{{sql_data.Multirace_any}}</td>
+                <td>{{mongo_data.Multirace}}</td>
+            </tr>
+            <tr>
+                <td>Male</td>
+                <td>{{sql_data.Male_same}}</td>
+                <td>{{sql_data.Male_any}}</td>
+                <td>{{mongo_data.Male}}</td>
+            </tr>
+            <tr>
+                <td>Female</td>
+                <td>{{sql_data.Female_same}}</td>
+                <td>{{sql_data.Female_any}}</td>
+                <td>{{mongo_data.Female}}</td>
+            </tr>
+        </table> 
+        </div>
+    </body>
+</html>

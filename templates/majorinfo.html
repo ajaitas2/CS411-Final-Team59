@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Major Info</title>
+        <h2>Major Info</h2>
+
+        <style>
+            h2 {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                font-size: 15mm;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body style>
+        <style>
+            .wrapper{
+                position: relative;
+                top: 50%;
+                margin-left: -550px;
+                margin-top: -400px;
+                left: 50%;
+            }
+            #datatable {
+              font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+              text-align: center;
+              width: 50%;
+            }
+
+            #datatable td, #datatable th {
+              border: 3px solid transparent;
+              padding: 8px;
+            }
+
+            #datatable tr {
+                background-color: lightblue;
+            }
+
+        </style>
+        <div class = "wrapper">
+        <table id = "datatable">
+            <tr>
+                <td>Major</td>
+                <td>{{sql_data.Major_Name}}</td>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td>{{sql_data.College}}</td>
+            </tr>
+            <tr>
+                <td>Department Code</td>
+                <td>{{sql_data.Dept}}</td>
+            </tr>
+            <tr>
+                <td>Asian</td>
+                <td>{{sql_data.Asian_American}}</td>
+            <tr>
+                <td>Black / African American</td>
+                <td>{{sql_data.African_American}}</td>
+            <tr>
+                <td>Hispanic</td>
+                <td>{{sql_data.Hispanic}}</td>
+            </tr>
+            <tr>
+                <td>Native American</td>
+                <td>{{sql_data.Native_American}}</td>
+            </tr>
+            <tr>
+                <td>Hawaiian/Pacific Islander</td>
+                <td>{{sql_data.Hawaiian_pacific_isl}}</td>
+            </tr>
+            <tr>
+                <td>White</td>
+                <td>{{sql_data.Caucasian}}</td>
+            </tr>
+            <tr>
+                <td>Multirace</td>
+                <td>{{sql_data.Multiracial}}</td>
+            </tr>
+            <tr>
+                <td>International</td>
+                <td>{{sql_data.International}}</td>
+            </tr>
+            <tr>
+                <td>Men</td>
+                <td>{{sql_data.Men}}</td>
+            </tr>
+            <tr>
+                <td>Women</td>
+                <td>{{sql_data.Women}}</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>{{sql_data.Total}}</td>
+            </tr>
+        </table> 
+        </div>
+    </body>
+</html>
